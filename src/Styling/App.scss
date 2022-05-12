@@ -1,0 +1,32 @@
+.mobile-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 8rem 0 8rem 0;
+}
+.context {
+  padding-left: 2rem;
+}
+.mobile-app img {
+  height: 37rem;
+  width: 25rem;
+}
+.description h1 {
+  color: green;
+}
+.description p {
+  color: rgb(126, 123, 123);
+  font-size: 16px;
+}
+.store img {
+  height: 3rem;
+  width: 10rem;
+  padding: 10px 10px 10px 0;
+  transition: 0.3s;
+}
+.store img:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  transform: scale(1.1);
+}

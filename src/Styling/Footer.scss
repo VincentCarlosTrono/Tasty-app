@@ -1,0 +1,128 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  padding: 5rem 0 4rem 0;
+}
+.footer-dark {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  padding: 5rem 0 4rem 0;
+}
+.main-footer h4 {
+  font-size: 1rem;
+  color: rgb(156, 154, 154);
+  font-weight: 400;
+}
+.main-footer-dark h4 {
+  font-size: 1rem;
+  color: rgb(156, 154, 154);
+  font-weight: 400;
+}
+.tasty-food h1 {
+  color: green;
+}
+.tasty-food-dark h1 {
+  color: green;
+}
+.tasty-food p {
+  color: rgb(87, 86, 86);
+}
+.tasty-food-dark p {
+  color: rgb(87, 86, 86);
+}
+.links {
+  display: grid;
+  grid-template-columns: repeat(3, 0.4fr);
+  grid-gap: 8rem;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+.links-dark {
+  display: grid;
+  grid-template-columns: repeat(3, 0.4fr);
+  grid-gap: 8rem;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+.links h1 {
+  color: green;
+}
+.links-dark h1 {
+  color: green;
+}
+.links p {
+  color: rgb(87, 86, 86);
+}
+.links-dark p {
+  color: rgb(87, 86, 86);
+}
+.links p:hover {
+  color: black;
+}
+.links-dark p:hover {
+  color: white;
+}
+.icons {
+  font-size: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 0.2fr);
+  grid-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  color: rgb(87, 86, 86);
+}
+.icons-dark {
+  font-size: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 0.2fr);
+  grid-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  color: rgb(87, 86, 86);
+}
+.icons p:hover {
+  cursor: pointer;
+  color: black;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.icons-dark p:hover {
+  cursor: pointer;
+  color: white;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+@media only screen and(max-width: 700px) {
+  .footer {
+    justify-content: center;
+    display: block;
+  }
+  .footer-dark {
+    justify-content: center;
+    display: block;
+  }
+  .links {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-gap: 10px;
+    text-align: center;
+  }
+  .links-dark {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-gap: 10px;
+    text-align: center;
+  }
+  .icons {
+    padding: 0 5rem 0 5rem;
+  }
+  .icons-dark {
+    padding: 0 5rem 0 5rem;
+  }
+}

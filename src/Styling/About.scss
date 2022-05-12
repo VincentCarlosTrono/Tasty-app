@@ -1,0 +1,104 @@
+.about {
+  padding: 10rem 0 12rem 0;
+  display: flex;
+  justify-content: center;
+  scroll-behavior: smooth;
+}
+.about-dark {
+  padding: 10rem 0 12rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about img {
+  height: 25rem;
+  width: 25rem;
+  border-radius: 2rem;
+  display: block;
+}
+.about-dark img {
+  height: 25rem;
+  width: 25rem;
+  border-radius: 2rem;
+  display: block;
+}
+.about-content {
+  text-align: left;
+  padding-left: 3rem;
+}
+.about-content-dark {
+  text-align: left;
+  padding-left: 3rem;
+}
+.about-content h3 {
+  color: green;
+  font-size: 24px;
+}
+.about-content-dark h3 {
+  color: green;
+  font-size: 24px;
+}
+.about-content h1 {
+  font-weight: 900;
+  font-size: 3rem;
+}
+.about-content-dark h1 {
+  font-weight: 900;
+  font-size: 3rem;
+  color: white;
+}
+.about-content p {
+  font-size: 20px;
+  color: rgb(65, 64, 64);
+}
+.about-content-dark p {
+  font-size: 20px;
+  color: rgb(136, 135, 135);
+}
+.about-content button {
+  background-color: green;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  border: hidden;
+  color: white;
+  transition: 0.5s;
+}
+.about-content-dark button {
+  background-color: green;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  border: hidden;
+  color: white;
+  transition: 0.5s;
+}
+.about-content button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.5s;
+  box-shadow: gray 1px 5px 4px;
+  background-color: rgb(4, 161, 4);
+}
+.about-content-dark button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.5s;
+  box-shadow: gray 1px 5px 4px;
+  background-color: rgb(4, 161, 4);
+}
+
+@media only screen and(max-width: 700px) {
+  .about img {
+    display: none;
+  }
+  .about-dark img {
+    display: none;
+  }
+  .about-content {
+    text-align: center;
+  }
+  .about-content-dark {
+    text-align: center;
+  }
+}

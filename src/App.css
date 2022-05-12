@@ -1,5 +1,29 @@
 .App {
   text-align: center;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  transition: 0.3s;
+}
+.App-dark {
+  transition: 0.5s;
+  text-align: center;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  background-color: black;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  border-bottom: solid rgb(199, 198, 198) 1px;
+}
+.navbar-dark {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  border-bottom: solid rgb(5, 207, 5) 1px;
 }
 
 .App-logo {
@@ -11,17 +35,6 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {

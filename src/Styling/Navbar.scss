@@ -1,0 +1,213 @@
+.nav-computer {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 20rem 1rem 20rem;
+  background-color: white;
+  transition: 0.5s;
+}
+.nav-computer-dark {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 20rem 1rem 20rem;
+  background-color: rgb(14, 13, 13);
+  transition: 0.3s;
+}
+
+.navbar-menu button {
+  font-size: 2rem;
+  background-color: white;
+  border: hidden;
+  transition: 0.3s;
+}
+.navbar-menu-dark button {
+  font-size: 2rem;
+  background-color: rgb(14, 13, 13);
+  border: hidden;
+  transition: 0.5s;
+  color: white;
+}
+
+.header h1 {
+  font-size: 3rem;
+  align-items: center;
+  justify-content: center;
+  color: rgb(6, 187, 6);
+}
+.navbar-menu ul {
+  display: flex;
+}
+
+.navbar-menu-dark ul {
+  display: flex;
+}
+
+.navbar-menu li {
+  list-style: none;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: 400;
+  border-radius: 2rem;
+}
+.navbar-menu-dark li {
+  list-style: none;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  color: rgb(211, 208, 208);
+  font-weight: 400;
+  border-radius: 2rem;
+}
+.navbar-menu a {
+  text-decoration: none;
+  color: green;
+}
+
+.navbar-menu-dark a {
+  text-decoration: none;
+  color: green;
+}
+.header h1:hover {
+  color: rgb(4, 196, 4);
+  cursor: pointer;
+}
+.header-dark h1:hover {
+  color: rgb(4, 196, 4);
+  cursor: pointer;
+}
+
+.navbar-menu li:hover {
+  color: green;
+  font-weight: 800;
+  transform: scale(1.1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.navbar-menu-dark li:hover {
+  color: green;
+  font-weight: 800;
+  transform: scale(1.1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.nav-mobile {
+  display: none;
+}
+
+.nav-mobile-dark {
+  display: none;
+}
+
+@media only screen and(max-width: 700px) {
+  .nav-computer {
+    display: none;
+  }
+  .nav-computer-dark {
+    display: none;
+  }
+  .darkmode-btn {
+    position: absolute;
+    left: 4rem;
+    top: 1.3rem;
+  }
+  .darkmode-btn-dark {
+    position: absolute;
+    left: 4rem;
+    top: 1.3rem;
+  }
+  .nav-mobile h1 {
+    color: green;
+  }
+  .nav-mobile-dark h1 {
+    color: rgb(6, 219, 6);
+  }
+  .nav-mobile {
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    width: 100%;
+    background-color: white;
+    border-bottom: solid rgb(202, 200, 200) 1px;
+  }
+  .nav-mobile-dark {
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    width: 100%;
+    background-color: black;
+    border-bottom: solid rgb(22, 214, 5) 1px;
+  }
+  .mobnav {
+    padding: 1rem 10rem 1rem 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    transition: 0.3s;
+  }
+  .mobnav-dark {
+    padding: 1rem 10rem 1rem 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    transition: 0.5s;
+  }
+  .mobnav button {
+    position: absolute;
+    left: 28rem;
+    padding: 5px;
+    background-color: white;
+    border: hidden;
+    transition: 0.3s;
+    font-size: 2rem;
+  }
+  .mobnav-dark button {
+    position: absolute;
+    left: 28rem;
+    padding: 5px;
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+    border: hidden;
+    transition: 0.5s;
+  }
+  .navbar-menu li {
+    padding: 8px;
+    color: rgb(6, 59, 6);
+    text-align: center;
+  }
+  .navbar-menu-dark li {
+    padding: 8px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+  .navbar-menu ul {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 8rem;
+    left: -1.5rem;
+    display: block;
+    background-color: rgb(106, 214, 106);
+    opacity: 97%;
+  }
+  .navbar-menu-dark ul {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 8rem;
+    left: -1.5rem;
+    display: block;
+    background-color: rgb(46, 160, 46);
+    opacity: 97%;
+  }
+}

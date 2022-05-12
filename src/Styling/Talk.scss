@@ -1,0 +1,83 @@
+.contact {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 1rem 0 9rem 0;
+  font-size: 20px;
+}
+.contact-dark {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 1rem 0 9rem 0;
+  color: rgb(129, 129, 129);
+  font-size: 20px;
+}
+.contact-dark h1 {
+  color: white;
+}
+.contact p {
+  color: gray;
+}
+.contact h2 {
+  color: green;
+  font-size: 20px;
+  font-weight: 800;
+}
+.contact-dark h2 {
+  color: green;
+  font-size: 20px;
+  font-weight: 800;
+}
+.contact-info {
+  text-align: left;
+}
+.contact-info-dark {
+  text-align: left;
+}
+.contact button {
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  background-color: green;
+  color: white;
+  border: hidden;
+  transition: 0.5s;
+}
+.contact-dark button {
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  background-color: green;
+  color: white;
+  border: hidden;
+  transition: 0.5s;
+}
+.contact button:hover {
+  box-shadow: gray 1px 4px 8px;
+  transition: 0.5s;
+  transform: scale(1.1);
+  background-color: rgb(3, 170, 3);
+  cursor: pointer;
+}
+.contact-dark button:hover {
+  box-shadow: gray 1px 4px 8px;
+  transition: 0.5s;
+  transform: scale(1.1);
+  background-color: rgb(3, 170, 3);
+  cursor: pointer;
+}
+@media only screen and (max-width: 700px) {
+  .contact {
+    display: block;
+  }
+  .contact-dark {
+    display: block;
+  }
+  .contact-info {
+    text-align: center;
+  }
+  .contact-info-dark {
+    text-align: center;
+  }
+}
