@@ -20,7 +20,7 @@ function App() {
 
       <div className={darkmode ? "App-dark" : "App"}>
         <div></div>
-        <header className="App-header">
+        <header className={darkmode ? "App-header-dark" : "App-header"}>
           <BodyContent />
           <About />
           <Services />

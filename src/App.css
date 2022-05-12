@@ -25,6 +25,14 @@
   z-index: 1;
   border-bottom: solid rgb(5, 207, 5) 1px;
 }
+.App-header {
+  background-color: white;
+  width: 100vw;
+}
+.App-header-dark {
+  background-color: black;
+  width: 100vw;
+}
 
 .App-logo {
   height: 40vmin;
