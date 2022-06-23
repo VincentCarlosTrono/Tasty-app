@@ -9,18 +9,15 @@ import Apps from "./Components/App";
 import Talk from "./Components/Talk";
 import Footer from "./Components/Footer";
 import { ThemeContext } from "./Components/ThemeContext";
+import "./Styling/App2.scss";
 
 function App() {
   const { darkmode } = useContext(ThemeContext);
   return (
-    <div>
-      <div className={darkmode ? "navbar-dark" : "navbar"}>
-        <Navbar />
-      </div>
-
-      <div className={darkmode ? "App-dark" : "App"}>
-        <div></div>
-        <header className={darkmode ? "App-header-dark" : "App-header"}>
+    <div className={`App-header ${darkmode && "dark"}`}>
+      <div className={"App"}>
+        <header className={"App-header"}>
+          <Navbar />
           <BodyContent />
           <About />
           <Services />
@@ -29,7 +26,6 @@ function App() {
           <Talk />
           <Footer />
         </header>
-        <div></div>
       </div>
     </div>
   );

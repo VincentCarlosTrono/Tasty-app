@@ -1,111 +1,70 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import "../Styling/Navbar.scss";
-import { ThemeContext } from "./ThemeContext";
 
 const Navbar = () => {
-  const [open, setOpen] = useState<boolean>(!false);
-  const { darkmode, setDarkmode } = useContext(ThemeContext);
+  const [open, setOpen] = useState<boolean>(false);
 
   return (
-    <div className="header">
-      <div className={darkmode ? " nav-computer-dark" : "nav-computer"}>
-        <h1>Tasty</h1>
-
-        <div className={darkmode ? "navbar-menu-dark" : "navbar-menu"}>
-          <ul>
-            <li>
-              <a href="/">HOME </a>
-            </li>
-            <li>
-              <a href="#about">ABOUT </a>
-            </li>
-            <li>
-              <a href="#services">SERVICES </a>
-            </li>
-            <li>
-              <a href="#menu">MENU </a>
-            </li>
-            <li>
-              <a href="#contact">CONTACT US </a>
-            </li>
-            <button
-              onClick={() => {
-                setDarkmode(!darkmode);
-              }}
-            >
-              {darkmode ? (
-                <div>
-                  <i className="bx bx-sun"></i>
-                </div>
-              ) : (
-                <div>
-                  <i className="bx bxs-moon"></i>
-                </div>
-              )}
-            </button>
-          </ul>
-        </div>
-      </div>
-
-      <div className={darkmode ? "nav-mobile-dark" : "nav-mobile"}>
-        <div className={darkmode ? "mobnav-dark" : "mobnav"}>
+    <div className="grid-container header-section">
+      <div className="container">
+        <div className="header">
           <h1>Tasty</h1>
+          <div className="navigation">
+            <ul className={`navbar`}>
+              <li>
+                <a href="/">HOME </a>
+              </li>
 
-          <div className="darkmode-btn">
-            <h1>
+              <li>
+                <a href="#about">ABOUT </a>
+              </li>
+
+              <li>
+                <a href="#services">SERVICES </a>
+              </li>
+
+              <li>
+                <a href="#menu">MENU </a>
+              </li>
+
+              <li>
+                <a href="#contact">CONTACT US </a>
+              </li>
+            </ul>
+
+            <div className={`nav-mobile-btn`}>
               <button
                 onClick={() => {
-                  setDarkmode(!darkmode);
+                  setOpen(!open);
                 }}
               >
-                {darkmode ? (
-                  <div>
-                    <i className="bx bx-sun"></i>
-                  </div>
-                ) : (
-                  <div>
-                    <i className="bx bxs-moon"></i>
-                  </div>
-                )}
+                <i className="bx bx-menu" />
               </button>
-            </h1>
-          </div>
-          <button
-            onClick={() => {
-              setOpen(!open);
-            }}
-          >
-            <i className="bx bx-menu"></i>
-          </button>
-
-          {open ? (
-            <div> </div>
-          ) : (
-            <div>
-              <div className={darkmode ? "navbar-menu-dark" : "navbar-menu"}>
-                <ul>
-                  <li>
-                    <a href="/">HOME </a>
-                  </li>
-
-                  <li>
-                    <a href="#about">ABOUT </a>
-                  </li>
-
-                  <li>
-                    <a href="#services">SERVICES </a>
-                  </li>
-
-                  <li>
-                    <a href="#menu">MENU </a>
-                  </li>
-
-                  <li>
-                    <a href="#contact">CONTACT US </a>
-                  </li>
-                </ul>
-              </div>
             </div>
+          </div>
+
+          {open && (
+            <ul className={`navbar-menu`}>
+              <li>
+                <a href="/">HOME </a>
+              </li>
+
+              <li>
+                <a href="#about">ABOUT </a>
+              </li>
+
+              <li>
+                <a href="#services">SERVICES </a>
+              </li>
+
+              <li>
+                <a href="#menu">MENU </a>
+              </li>
+
+              <li>
+                <a href="#contact">CONTACT US </a>
+              </li>
+            </ul>
           )}
         </div>
       </div>

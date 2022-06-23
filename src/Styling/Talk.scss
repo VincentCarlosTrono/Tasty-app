@@ -1,22 +1,26 @@
 .contact {
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 4rem;
   display: flex;
-  padding: 1rem 0 9rem 0;
+  padding: 10rem 0;
   font-size: 20px;
 }
 .contact-dark {
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 4rem;
   display: flex;
-  padding: 1rem 0 9rem 0;
-  color: rgb(129, 129, 129);
+  padding: 10rem 0;
   font-size: 20px;
 }
 .contact-dark h1 {
   color: white;
 }
 .contact p {
+  color: gray;
+}
+.contact-dark p {
   color: gray;
 }
 .contact h2 {

@@ -28,26 +28,30 @@ const Menu = () => {
     },
   ];
   return (
-    <div className={darkmode ? "offer-menu-dark" : "offer-menu"}>
-      <h1>Menu</h1>
-      <div className={darkmode ? "menu-dark" : "menu"}>
-        {menus.map((menu: any) => {
-          const { image, title, description, price } = menu;
+    <div className="grid-container">
+      <div className="container">
+        <div className={"offer-menu"}>
+          <h1>Menu</h1>
+          <div className={"menu"}>
+            {menus.map((menu: any) => {
+              const { image, title, description, price } = menu;
 
-          return (
-            <div className={darkmode ? "cards-dark" : "cards"} id="menu">
-              <div className={darkmode ? "card-dark" : "card"}>
-                <img src={image} alt="menu" />
-                <h1>{title}</h1>
-                <p>{description}</p>
-                <h2>{price}</h2>
-                <button>
-                  <i className="bx bx-cart"></i>
-                </button>
-              </div>
-            </div>
-          );
-        })}
+              return (
+                <div className={"cards"} id="menu">
+                  <div className={"card"}>
+                    <img src={image} alt="menu" />
+                    <h1>{title}</h1>
+                    <p>{description}</p>
+                    <h2>{price}</h2>
+                    <button>
+                      <i className="bx bx-cart"></i>
+                    </button>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
     </div>
   );

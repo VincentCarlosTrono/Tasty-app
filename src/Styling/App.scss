@@ -1,4 +1,5 @@
 .mobile-app {
+  gap: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,9 +7,9 @@
   padding: 8rem 0 8rem 0;
 }
 .context {
-  padding-left: 2rem;
+  max-width: 50%;
 }
-.mobile-app img {
+.phone img {
   height: 37rem;
   width: 25rem;
 }
@@ -18,15 +19,45 @@
 .description p {
   color: rgb(126, 123, 123);
   font-size: 16px;
+  padding: 1rem 0;
 }
+.store {
+  display: flex;
+  gap: 1rem;
+}
+
 .store img {
   height: 3rem;
   width: 10rem;
-  padding: 10px 10px 10px 0;
-  transition: 0.3s;
 }
 .store img:hover {
   cursor: pointer;
-  transition: 0.5s;
   transform: scale(1.1);
+}
+
+@media screen and(max-width: 700px) {
+  .mobile-app {
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    display: block;
+    text-align: center;
+    padding: 4rem 0 4rem 0;
+  }
+  .store {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .store img {
+    height: 2rem;
+    width: 5rem;
+  }
+  .phone img {
+    height: 16rem;
+    width: 14rem;
+  }
+  .context {
+    max-width: 100%;
+  }
 }

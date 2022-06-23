@@ -28,41 +28,45 @@ const Footer = () => {
     },
   ];
   return (
-    <div className={darkmode ? "main-footer-dark" : "main-footer"}>
-      <div className={darkmode ? "footer-dark" : "footer"}>
-        <div className={darkmode ? "tasty-food-dark" : "tasty-food"}>
-          <h1>Tasty Food</h1>
-          <p>Restaurants</p>
+    <div className="grid-container">
+      <div className="container">
+        <div className={"main-footer"}>
+          <div className={"footer"}>
+            <div className={"tasty-food"}>
+              <h1>Tasty Food</h1>
+              <p>Restaurants</p>
 
-          <p>follow us:</p>
-          <div className={darkmode ? "icons-dark" : "icons"}>
-            <p>
-              <i className="bx bxl-facebook-square"></i>
-            </p>
-            <p>
-              <i className="bx bxl-twitter"></i>
-            </p>
-            <p>
-              <i className="bx bxl-instagram-alt"></i>
-            </p>
-          </div>
-        </div>
-        <div className={darkmode ? "links-dark" : "links"}>
-          {links.map((link: any) => {
-            const { title, link1, link2, link3, link4 } = link;
-            return (
-              <div>
-                <h1>{title}</h1>
-                <p>{link1}</p>
-                <p>{link2}</p>
-                <p>{link3}</p>
-                <p>{link4}</p>
+              <p>follow us:</p>
+              <div className={"icons"}>
+                <p>
+                  <i className="bx bxl-facebook-square"></i>
+                </p>
+                <p>
+                  <i className="bx bxl-twitter"></i>
+                </p>
+                <p>
+                  <i className="bx bxl-instagram-alt"></i>
+                </p>
               </div>
-            );
-          })}
+            </div>
+            <div className={"links"}>
+              {links.map((link: any) => {
+                const { title, link1, link2, link3, link4 } = link;
+                return (
+                  <div>
+                    <h1>{title}</h1>
+                    <p>{link1}</p>
+                    <p>{link2}</p>
+                    <p>{link3}</p>
+                    <p>{link4}</p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+          <h4>©2020 Bedimcode. All right reserved</h4>
         </div>
       </div>
-      <h4>©2020 Bedimcode. All right reserved</h4>
     </div>
   );
 };

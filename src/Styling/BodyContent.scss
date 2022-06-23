@@ -3,13 +3,16 @@
   justify-content: center;
   align-items: center;
   padding: 16rem 0 4rem 0;
+  gap: 2rem;
 }
 .body-dark {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 16rem 0 4rem 0;
+  gap: 2rem;
 }
+
 .body-content {
   text-align: left;
   font-size: 2rem;
@@ -78,10 +81,10 @@
 
 @media only screen and (max-width: 700px) {
   .body {
-    padding-top: 10rem;
+    padding-top: 22rem;
   }
   .body-dark {
-    padding-top: 10rem;
+    padding-top: 22rem;
   }
   .body-content {
     text-align: center;
@@ -97,5 +100,21 @@
 
   .body-dark img {
     display: none;
+  }
+  .body-content h1 {
+    color: rgb(3, 63, 3);
+    font-size: 2rem;
+  }
+  .body-content-dark h1 {
+    color: rgb(4, 122, 4);
+    font-size: 2rem;
+  }
+  .body-content h3 {
+    color: rgb(54, 54, 54);
+    font-size: 1rem;
+  }
+  .body-content-dark h3 {
+    color: white;
+    font-size: 1rem;
   }
 }

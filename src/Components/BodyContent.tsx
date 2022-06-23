@@ -6,13 +6,17 @@ import { ThemeContext } from "./ThemeContext";
 const BodyContent = () => {
   const { darkmode } = useContext(ThemeContext);
   return (
-    <div className={darkmode ? "body-dark" : "body"}>
-      <div className={darkmode ? "body-content-dark" : "body-content"}>
-        <h1>Tasty Food</h1>
-        <h3>Try The Best Food Of The Week.</h3>
-        <button>View Menu</button>
+    <div className="grid-container">
+      <div className="container">
+        <div className={"body"}>
+          <div className={"body-content"}>
+            <h1>Tasty Food</h1>
+            <h3>Try The Best Food Of The Week.</h3>
+            <button>View Menu</button>
+          </div>
+          <img src={BodyImage} alt="maindish" />
+        </div>
       </div>
-      <img src={BodyImage} alt="maindish" />
     </div>
   );
 };

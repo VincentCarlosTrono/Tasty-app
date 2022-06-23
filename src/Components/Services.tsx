@@ -28,19 +28,23 @@ const Services = () => {
   ];
 
   return (
-    <div className={darkmode ? "offer-dark" : "offer"} id="services">
-      <h1>Our Amazing Services</h1>
-      <div className={darkmode ? "services-dark" : "services"}>
-        {services.map((service: any) => {
-          const { image, title, description } = service;
-          return (
-            <div>
-              <img src={image} alt="maindish" />
-              <h1>{title}</h1>
-              <p>{description}</p>
-            </div>
-          );
-        })}
+    <div className="grid-container">
+      <div className="container">
+        <div className={"offer"} id="services">
+          <h1>Our Amazing Services</h1>
+          <div className={"services"}>
+            {services.map((service: any) => {
+              const { image, title, description } = service;
+              return (
+                <div>
+                  <img src={image} alt="maindish" />
+                  <h1>{title}</h1>
+                  <p>{description}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
     </div>
   );

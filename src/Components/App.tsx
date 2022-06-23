@@ -6,19 +6,25 @@ import "../Styling/App.scss";
 
 const App = () => {
   return (
-    <div className="mobile-app">
-      <img src={Mobile} alt="mobile-phone" />
-      <div className="context">
-        <div className="description">
-          <h1>App is available</h1>
-          <p>
-            Find our application and download it, you can make reservations,
-            food orders, see your deliveries on the way and much more.
-          </p>
-        </div>
-        <div className="store">
-          <img src={Apple} alt="apple-store" />
-          <img src={Android} alt="googleplay-store" />
+    <div className="grid-container">
+      <div className="container">
+        <div className="mobile-app">
+          <div className="phone">
+            <img src={Mobile} alt="mobile-phone" />
+          </div>
+          <div className="context">
+            <div className="description">
+              <h1>App is available</h1>
+              <p>
+                Find our application and download it, you can make reservations,
+                food orders, see your deliveries on the way and much more.
+              </p>
+            </div>
+            <div className="store">
+              <img src={Apple} alt="apple-store" />
+              <img src={Android} alt="googleplay-store" />
+            </div>
+          </div>
         </div>
       </div>
     </div>

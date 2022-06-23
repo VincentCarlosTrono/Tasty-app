@@ -16,6 +16,7 @@
   justify-content: center;
   align-items: center;
   text-align: left;
+  gap: 2rem;
 }
 .menu-dark {
   padding: 3rem 0 3rem 0;
@@ -23,16 +24,7 @@
   justify-content: center;
   align-items: center;
   text-align: left;
-}
-.cards {
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(2, 0.2fr);
-}
-.cards-dark {
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(2, 0.2fr);
+  gap: 2rem;
 }
 .card {
   box-shadow: green 1px 1px 10px;
@@ -117,12 +109,12 @@
   }
   .menu {
     display: grid;
-    grid-template-columns: repeat(2, 0.2fr);
+    grid-template-columns: repeat(1, 0.2fr);
     grid-gap: 1rem;
   }
   .menu-dark {
     display: grid;
-    grid-template-columns: repeat(2, 0.2fr);
+    grid-template-columns: repeat(1, 0.2fr);
     grid-gap: 1rem;
   }
 }
