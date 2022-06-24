@@ -64,7 +64,7 @@ const Footer = () => {
               })}
             </div>
           </div>
-          <h4>©2020 Bedimcode. All right reserved</h4>
+          <h4>©Trono, Vincent. All right reserved</h4>
         </div>
       </div>
     </div>
